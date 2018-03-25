@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['localhost']
 # Application definition
 
 INSTALLED_APPS = [
+    'dbsite',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
