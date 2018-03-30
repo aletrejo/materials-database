@@ -33,12 +33,12 @@ CREATE TABLE property(
 	property_id SMALLINT UNSIGNED NOT NULL,
 	property_type_id SMALLINT UNSIGNED NOT NULL,
 	name VARCHAR(100),
-	PRIMARY KEY (property_id),
+	PRIMARY KEY (property_id)
 );
 
 CREATE TABLE property_option(
 	property_id SMALLINT UNSIGNED NOT NULL,
-	option VARCHAR(100),
+	state VARCHAR(100),
 	FOREIGN KEY (property_id) REFERENCES property(property_id)
 );
 
