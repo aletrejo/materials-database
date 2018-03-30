@@ -16,9 +16,11 @@ CREATE TABLE material_type(
 CREATE TABLE material (
 	material_id INTEGER(4) UNSIGNED NOT NULL,
 	name VARCHAR(100),
+	material_type_id TINYINT UNSIGNED NOT NULL,
 	description VARCHAR(500),
 	location varchar(100),
-	PRIMARY KEY(material_id)
+	PRIMARY KEY(material_id),
+	FOREIGN KEY (material_type_id) REFERENCES material_type(material_type_id)
 );
 
 CREATE TABLE property_type(
@@ -29,17 +31,14 @@ CREATE TABLE property_type(
 
 CREATE TABLE property(
 	property_id SMALLINT UNSIGNED NOT NULL,
-	name VARCHAR(100),
 	property_type_id SMALLINT UNSIGNED NOT NULL,
+	name VARCHAR(100),
 	PRIMARY KEY (property_id),
-	FOREIGN KEY (property_type_id) REFERENCES property_type(property_type_id)
 );
 
 CREATE TABLE property_option(
 	property_id SMALLINT UNSIGNED NOT NULL,
-	option1 VARCHAR(100),
-	option2 VARCHAR(100),
-	option3 VARCHAR(100),
+	option VARCHAR(100),
 	FOREIGN KEY (property_id) REFERENCES property(property_id)
 );
 
