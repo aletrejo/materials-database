@@ -1,11 +1,12 @@
-DROP TABLE IF EXISTS material_type;
-DROP TABLE IF EXISTS material;
-DROP TABLE IF EXISTS property_type;
-DROP TABLE IF EXISTS property;
-DROP TABLE IF EXISTS property_option;
+
 DROP TABLE IF EXISTS material_property;
-DROP TABLE IF EXISTS processing;
+DROP TABLE IF EXISTS material;
+DROP TABLE IF EXISTS material_type;
+DROP TABLE IF EXISTS property_option;
+DROP TABLE IF EXISTS property;
+DROP TABLE IF EXISTS property_type;
 DROP TABLE IF EXISTS material_processing;
+DROP TABLE IF EXISTS processing;
 
 CREATE TABLE material_type(
 	material_type_id TINYINT UNSIGNED NOT NULL,
