@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'materials.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'materials_test',
+        'NAME': 'materials_db',
         'USER': 'root',
         'PASSWORD': 'nyuad2019',
         'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
