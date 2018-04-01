@@ -1,0 +1,20 @@
+1	1	Feel
+2	1	Stiffness
+3	1	Structure
+4	1	Surface/Texture
+5	1	Transperancy
+6	1	Surface Hardness
+7	2	Fire Resistance
+8	2	Usage Temperature
+9	2	Color Fastness
+10	2	Wear Resistance
+11	2	Water Resistance
+12	2	Acoustics
+13	2	Chemical Resistance
+14	2	UV Resistance
+15	2	Scratch Resistance
+16	2	Outdoor Use
+17	2	Tear Resistance
+18	2	Stain Resistance
+19	2	Thermal Conductivity
+20	2	Impact Resistance

@@ -1,0 +1,33 @@
+1	7	High
+1	8	Medium
+1	9	High
+1	10	High
+1	11	High
+1	12	Sound Reflecting
+1	13	High
+1	14	High
+1	15	Medium
+1	16	Yes
+1	18	Medium
+1	19	Low
+1	20	Good
+2	1	Soft
+2	2	Semi-Rigid
+2	3	Open
+2	4	Glossy
+2	5	Opaque
+2	6	Rubbery
+2	7	High
+2	8	Medium
+2	9	High
+2	10	High
+2	11	High
+2	12	Sound Reflecting
+2	13	High
+2	14	High
+2	15	Medium
+2	16	Yes
+2	17	High
+2	18	Medium
+2	19	Low
+2	20	Good

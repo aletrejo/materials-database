@@ -1,11 +1,11 @@
 
 DROP TABLE IF EXISTS material_property;
+DROP TABLE IF EXISTS material_processing;
 DROP TABLE IF EXISTS material;
 DROP TABLE IF EXISTS material_type;
 DROP TABLE IF EXISTS property_option;
 DROP TABLE IF EXISTS property;
 DROP TABLE IF EXISTS property_type;
-DROP TABLE IF EXISTS material_processing;
 DROP TABLE IF EXISTS processing;
 
 CREATE TABLE material_type(
@@ -18,7 +18,7 @@ CREATE TABLE material (
 	material_id INTEGER(4) UNSIGNED NOT NULL,
 	name VARCHAR(100),
 	material_type_id TINYINT UNSIGNED NOT NULL,
-	description VARCHAR(500),
+	description VARCHAR(2048),
 	location varchar(100),
 	PRIMARY KEY(material_id),
 	FOREIGN KEY (material_type_id) REFERENCES material_type(material_type_id)

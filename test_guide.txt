@@ -1,0 +1,1 @@
+User Guide:1) Create a test database 	mysql > CREATE DATABASE ÒtestÓ;2) Select the database	mysql > USE ÒtestÓ;3) Create the table structures	mysql > SOURCE scripts/materials.sql4) Load the data in the database	mysql > SOURCE scripts/load_data.sql
