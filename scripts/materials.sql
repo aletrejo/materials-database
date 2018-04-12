@@ -5,6 +5,7 @@ DROP TABLE IF EXISTS material;
 DROP TABLE IF EXISTS material_type;
 DROP TABLE IF EXISTS property_option;
 DROP TABLE IF EXISTS property;
+DROP TABLE IF EXISTS mat_property;
 DROP TABLE IF EXISTS property_type;
 DROP TABLE IF EXISTS processing;
 
@@ -24,31 +25,26 @@ CREATE TABLE material (
 	FOREIGN KEY (material_type_id) REFERENCES material_type(material_type_id)
 );
 
-CREATE TABLE property_type(
-	property_type_id SMALLINT UNSIGNED NOT NULL,
-	name VARCHAR(100),
-	PRIMARY KEY(property_type_id)
-);
-
-CREATE TABLE property(
+CREATE TABLE mat_property(
 	property_id SMALLINT UNSIGNED NOT NULL,
 	property_type_id SMALLINT UNSIGNED NOT NULL,
 	name VARCHAR(100),
 	PRIMARY KEY (property_id)
 );
 
-CREATE TABLE property_option(
+CREATE TABLE property_state(
 	property_id SMALLINT UNSIGNED NOT NULL,
 	state VARCHAR(100),
-	FOREIGN KEY (property_id) REFERENCES property(property_id)
+	FOREIGN KEY (property_id) REFERENCES mat_property(property_id)
 );
 
 CREATE TABLE material_property(
 	material_id INTEGER(4) UNSIGNED NOT NULL,
 	property_id SMALLINT UNSIGNED NOT NULL,
-	property_value VARCHAR(100),
+	property_state VARCHAR(100),
+	property_description VARCHAR(256) DEFAULT NULL,
 	FOREIGN KEY (material_id) REFERENCES material(material_id),
-	FOREIGN KEY (property_id) REFERENCES property(property_id)
+	FOREIGN KEY (property_id) REFERENCES mat_property(property_id)
 );
 
 CREATE TABLE processing(
