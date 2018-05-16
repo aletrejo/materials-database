@@ -1,3 +1,5 @@
+#the following commands load the data in their respective tables
+#the date is stored in the data director
 LOAD DATA LOCAL INFILE "data/material_types.txt" INTO TABLE material_type;
 LOAD DATA LOCAL INFILE "data/materials.txt" INTO TABLE material;
 LOAD DATA LOCAL INFILE "data/properties.txt" INTO TABLE mat_property;
